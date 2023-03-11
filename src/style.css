@@ -1,3 +1,100 @@
-.test {
-  color: blue;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body::after {
+  content: '';
+  background: url('steak.jpg') no-repeat center fixed;
+  background-size: cover;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
+#header {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  font-weight: bold;
+  order: 0;
+}
+
+#footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  font-weight: bold;
+  order: 2;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+  align-self: center;
+  width: 700px;
+  height: 450px;
+  order: 1;
+}
+
+.headline {
+  padding: 10px;
+  flex-grow: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.information {
+  font-size: 20px;
+  flex-grow: 1;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information > p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 }

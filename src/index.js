@@ -1,7 +1,8 @@
 import './style.css';
+import SteakImg from './steak.jpg';
 
-const content = document.getElementById('content');
-const hiDiv = document.createElement('div');
-hiDiv.textContent = 'Hi! Testing css';
-hiDiv.classList.add('test');
-content.appendChild(hiDiv);
+import pageLoad from './pageLoad';
+import loadHome from './loadHome';
+
+pageLoad();
+loadHome();
