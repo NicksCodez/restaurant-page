@@ -1,5 +1,5 @@
 export default function pageLoad() {
-  const content = document.getElementById('content');
+  // const content = document.getElementById('content');
 
   const header = document.createElement('div');
   header.setAttribute('id', 'header');
@@ -24,10 +24,12 @@ export default function pageLoad() {
         break;
     }
   }
-  content.appendChild(header);
+  // content.appendChild(header);
+  document.body.append(header);
 
   const footer = document.createElement('div');
   footer.setAttribute('id', 'footer');
   footer.textContent = 'Some awfully grave copyright information';
-  content.appendChild(footer);
+  // content.appendChild(footer);
+  document.body.appendChild(footer);
 }

@@ -4,13 +4,16 @@ body {
   height: 100vh;
   background: url('steak.jpg') no-repeat center fixed;
   background-size: cover;
-}
-
-#content {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  order: 1;
 }
 
 ul {
@@ -54,7 +57,6 @@ ul {
   align-self: center;
   width: 700px;
   height: 450px;
-  order: 1;
 }
 
 .headline {
@@ -144,7 +146,6 @@ img {
 }
 
 #contact {
-  order: 1;
   margin: 80px 0px;
   padding: 15px 0px;
   background-color: rgba(0, 0, 0, 0.6);

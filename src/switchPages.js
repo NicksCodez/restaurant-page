@@ -18,27 +18,21 @@ export default function switchPages() {
         buttons[i].addEventListener('click', (event) => {
           event.preventDefault();
           clearContent();
-          pageLoad();
           loadHome();
-          switchPages();
         });
         break;
       case 'Menu':
         buttons[i].addEventListener('click', (event) => {
           event.preventDefault();
           clearContent();
-          pageLoad();
           loadMenu();
-          switchPages();
         });
         break;
       case 'Contact':
         buttons[i].addEventListener('click', (event) => {
           event.preventDefault();
           clearContent();
-          pageLoad();
           loadContact();
-          switchPages();
         });
         break;
       default:
