@@ -117,6 +117,7 @@ button {
   align-items: center;
   padding: 5px;
   border: 1px goldenrod solid;
+  border-radius: 4px;
 }
 
 .image {
